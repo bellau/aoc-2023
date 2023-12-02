@@ -23,8 +23,8 @@ fn main() -> Result<(),Error> {
    
        println!("part one {result}");
     
-       let part_one = instance.get_typed_func::<i32, i32>(&mut store, "part_one")?;
-       let result = part_one.call(&mut store, INPUT.len() as i32)?;
+       let part_two = instance.get_typed_func::<i32, i32>(&mut store, "part_two")?;
+       let result = part_two.call(&mut store, INPUT.len() as i32)?;
    
        println!("part two {result}");
     
